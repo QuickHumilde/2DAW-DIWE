@@ -1,0 +1,183 @@
+/*Pone la imagen de fondo a la pagina*/
+body{
+    background-image: url(./img/background.jpg) ; 
+    background-color: #e7fffa;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* No permite que la pagina tengan un scroll vertical */
+body.no_scroll{
+    overflow: hidden;
+}
+
+.cuadro_fondo_texto{
+    background-color: #e7fffa;
+    border: 2px solid #09725d;
+    border-radius: 8px;
+}
+
+/*Cabecera de todas las paginas*/
+.cabecera {
+    padding: 15px;
+    text-align: center;
+    background: #0fb493;
+    color: white;
+    font-size: 15px;
+    border: 2px solid #09725d;
+}
+
+/* Hace que la navegacion de la cabecera este en una sola linea y los textos esten separados entre si */
+ul.navegacion li {
+    display: inline;
+    text-align: center;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+/*Quita el subrayado a los enlaces de la cabecera*/
+ul.navegacion a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Hace que cuando el raton pase por encima de los enlaces de la cabecera cambie el estilo del texto*/
+ul.navegacion a:hover {
+    text-decoration: none;
+    color: rgb(130, 236, 222);
+    font-style: italic;
+    font-weight: bolder;
+    /* font-size: 20px; */
+}
+
+/*Hace que el estilo del enlace de la pagina actual sea distinto a los demas, para que el usuario sepa en que pagina se encuentra*/
+#pagina_actual{
+    color: rgb(130, 236, 222);
+    font-weight: bolder;
+}
+
+/*Cambia el color de fondo del cuerpo, el tamaño de fuente y añade los margenes/padding necesarios*/
+.cuerpo {
+    padding: 20px;
+    color: #09725d;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Cambia el display a flex para que las imagenes puedan estar al lado de los textox, etc...*/
+.display_flex{
+    display: flex;
+}
+
+/*Hace que el texto del index tenga un padding a la derecha*/
+.inicio_texto{
+    padding-right: 10%;
+    padding-right: 10%;
+    text-align: center;
+    /*background-color: #e7fffa;
+    border: 2px solid #09725d;
+    border-radius: 8px;*/
+
+}
+
+/*Modifica la imagen de la pagina principal */
+.imagen_index{
+    border-radius: 10px;
+    border: 2px solid #09725d;
+    border-radius: 4px;
+    height: 700px;
+    float: right;
+    box-shadow: 7.5px 7.5px 0 0 #02241d52;
+}
+
+/*Cambia el diseño del pie de pagina*/
+.pie_de_pagina {
+    width: 100%;
+    background-color: #0fb493;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    border: 2px solid #09725d;
+}
+
+/*Cambia el diseño del pie de pagina y añade que su posicion sea fixed, para que siempre este abajo da igual la posicion de la pagina*/
+.pie_de_pagina_fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #0fb493;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    border: 2px solid #09725d;
+}
+
+/*Genera el cuadro de texto de la pagina de generos*/
+.cuadro-texto {
+    align-content: center;
+    padding: 20px;
+    background-color: #d7fcf4;
+    border: 2px solid #09725d;
+    border-radius: 8px;
+    color: #09725d;
+    margin: 0px;
+    font-size: 17.5px;
+}
+
+/*Cambia el estilo del encabezado de los cuadros de la pagina de generos*/
+.tipo_titulo{
+    font-weight: bold;
+    font-size: 25px;
+    color: #0c8f75;
+}
+
+/* Pone que los div de la pagina generos esten en un grid y esten divididos en 2 columnas */
+.cuerpo_generos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/*Modifica el estilo de la tabla de la pagina ejemplos*/
+.tabla_ejemplo{
+    border: solid 3px #09725d;
+    color: #09725d;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: #d7fcf4;
+}
+
+/*Los encabezados de la tabla de ejemplos tienen este estilo*/
+.encabezado_tabla_ejemplos th{
+    padding: 7.5px;
+    border-bottom: 3px solid #09725d;
+    color: #09725d;
+}
+
+/*Modifica el tamaño de la imagen de la tabla ejemplos para que no se deforme*/
+.imagen_portada_tabla{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/*Le añade margenes a la lista de curiosidades*/
+.lista_curiosidades{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*Alinea el texto de los enumerados de la lista de curiosidades*/
+.lista_curiosidades li{
+    text-align: left;
+    margin: 15px;
+}
+
+/*Cambia el color de los enlaces que sean h1*/
+h2 a{
+    color: #09725d;
+}
