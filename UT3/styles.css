@@ -1,11 +1,44 @@
-body{
-    a{
+body {
+    a {
         color: red;
     }
 
-    p{
-        background-color: blue;
+    p {
         width: 600px;
-        padding: 10;
+        padding: 10px;
+    }
+
+    p:first-child {
+        background-color: aqua;
+    }
+
+    p:nth-child(2) {
+        background-color: darkorchid;
+        color: honeydew;
+    }
+
+    .div-static {
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+    }
+
+    .div-relative {
+        background-color: rgb(78, 8, 52);
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+
+    .div-absolute {
+        background-color: rgb(59, 128, 19);
+        width: 100px;
+        height: 100px;
+    }
+
+    .div-fixed {
+        background-color: rgb(255, 0, 170);
+        width: 100px;
+        height: 100px;
     }
 }
