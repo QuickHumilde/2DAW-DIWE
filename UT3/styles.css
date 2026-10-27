@@ -1,0 +1,11 @@
+body{
+    a{
+        color: red;
+    }
+
+    p{
+        background-color: blue;
+        width: 600px;
+        padding: 10;
+    }
+}
