@@ -1,0 +1,65 @@
+body {
+    padding-top: 25px;
+}
+
+a {
+    color: red;
+}
+
+p:first-child {
+    background-color: aqua;
+}
+
+p:nth-child(2) {
+    background-color: darkorchid;
+    color: honeydew;
+}
+
+.div-static {
+    position: static;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.div-relative {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    background-color: rgb(78, 8, 52);
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.div-absolute {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    color: white;
+    background-color: rgb(59, 128, 19);
+    width: 100px;
+    height: 100px;
+}
+
+.div-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(255, 0, 170);
+    width: 100px;
+    height: 100px;
+}
+
+.fixed_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: chocolate;
+    color: white;
+    z-index: 100;
+}
