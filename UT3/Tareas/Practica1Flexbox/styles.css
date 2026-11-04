@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(59, 77, 95);
+}
+
+.div_central{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.imagen_carpeta_personas_papeles{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.imagen_carpeta_personas_papeles img{
+    width: 30%;
+    height: 30%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
