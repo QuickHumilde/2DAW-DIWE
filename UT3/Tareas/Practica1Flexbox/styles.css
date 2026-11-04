@@ -7,12 +7,17 @@ body {
     background-color: rgb(59, 77, 95);
 }
 
+p{
+    color: white;
+}
+
 .div_central{
     margin: auto;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
     align-items: center;
+    align-content: space-around;
 }
 
 .imagen_carpeta_personas_papeles{
@@ -26,7 +31,22 @@ body {
     height: 30%;
 }
 
-h1 {
+.boton_degradado{
+    border-radius: 50%;
+    color: white;
+    height: 30px;
+    width:150px;
+    background-color: rgb(210, 168, 188);
+}
+
+h1, h3 {
     color: white;
     text-align: center;
+}
+
+.tarjeta_caracteristica {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center; 
 }
