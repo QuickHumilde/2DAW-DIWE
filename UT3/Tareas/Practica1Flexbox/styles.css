@@ -4,11 +4,35 @@
 }
 
 body {
-    background-color: rgb(59, 77, 95);
+    background-color: rgb(45, 61, 77);
+    margin: 0 auto;
 }
 
 p{
     color: white;
+        font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgb(49, 72, 95)
+}
+
+.imagen_logo_header img{
+    width: 40%;
+    height: 40%;
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
 }
 
 .div_central{
@@ -18,6 +42,15 @@ p{
     flex-flow: column wrap;
     align-items: center;
     align-content: space-around;
+}
+
+.div_central h1{
+    margin: 2%;
+}
+
+.div_central p{
+    text-align: center;
+    margin: 1%;
 }
 
 .imagen_carpeta_personas_papeles{
@@ -39,16 +72,36 @@ p{
     background-color: rgb(210, 168, 188);
 }
 
-h1, h3 {
+h1, h2, h3 {
     color: white;
     text-align: center;
 }
 
-.tarjeta_caracteristica {
+.div_caracteristicas {
     display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-items: center; 
+    flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 80px auto;
+}
+
+.tarjeta_caracteristica {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta_caracteristica h3{
+    margin: 5%;
+}
+
+.light_blue_link{
+    color: aqua;
+    text-decoration: underline;
 }
 
 /* RESENYAS */
@@ -61,7 +114,7 @@ h1, h3 {
 }
 
 .tarjeta_resenya{
-    background-color: rgb(90, 124, 158);
+    background-color: rgb(63, 88, 113);
     border-radius: 4px  ;
 
 }
