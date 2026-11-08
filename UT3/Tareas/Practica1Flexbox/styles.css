@@ -10,6 +10,7 @@ body {
     background-size: 100% auto, 100% 45vw;
     background-position: center 15vw, top center;
     font-family: "Open Sans", sans-serif;
+    min-width: 320px;
 }
 
 p {
@@ -100,6 +101,7 @@ h1, h2, h3 {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 50%;
+    min-width: 260px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -119,6 +121,7 @@ h1, h2, h3 {
 
 .div_description_1_intern {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -131,6 +134,11 @@ h1, h2, h3 {
 .imagen_stay_productive img {
     width: 65%;
     height: auto;
+}
+
+.show_how_fylo_works {
+    flex: 1;
+    min-width: 260px;
 }
 
 .light_blue_link {
@@ -158,20 +166,23 @@ h1, h2, h3 {
     margin: 0 10%;
 }
 
-.comillas_resenya{
+.comillas_resenya {
     margin-top: 10%;
     margin-left: 13%;
 }
 
-.comillas_resenya img{
+.comillas_resenya img {
     width: 2%;
     height: 2%;
+    min-width: 20px;
 }
 
 .tarjeta_resenya {
     background-color: rgb(63, 88, 113);
     border-radius: 4px;
     flex-basis: 28%;
+    min-width: 240px;
+    min-height: 175px;
     padding: 1%;
     padding-top: 2%;
 }
@@ -203,7 +214,7 @@ h1, h2, h3 {
     margin-right: 12px;
 }
 
-.texto_usuario{
+.texto_usuario {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -221,7 +232,7 @@ h1, h2, h3 {
     flex-flow: column nowrap;
     text-align: center;
     justify-content: space-evenly;
-    min-height: 250px
+    min-height: 250px;
 }
 
 .search_bar {
@@ -232,6 +243,7 @@ h1, h2, h3 {
 
 .search_bar input {
     flex: 1;
+    min-width: 120px;
     height: 35px;
     border: none;
     border-radius: 100px;
@@ -248,7 +260,7 @@ h1, h2, h3 {
     background: linear-gradient(90deg, rgb(124, 248, 255), rgb(124, 211, 255));
 }
 
-.get_started_container_father{
+.get_started_container_father {
     position: relative;
     width: 100%;
     margin-bottom: -140px;
@@ -269,6 +281,7 @@ h1, h2, h3 {
 
 .footer_contenido {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 3%;
@@ -279,6 +292,7 @@ h1, h2, h3 {
     flex-flow: row nowrap;
     align-items: flex-start;
     flex-basis: 25%;
+    min-width: 220px;
 }
 
 .imagen_icono_footer {
