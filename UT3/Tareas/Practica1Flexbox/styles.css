@@ -4,13 +4,17 @@
 }
 
 body {
-    background-color: rgb(32, 44, 56);
+    background-color: #181F2B;
+    background-image: url("./images/bg-curvy-desktop.svg"), linear-gradient(#1C2431, #1C2431);
+    background-repeat: no-repeat;
+    background-size: 100% auto, 100% 45vw;
+    background-position: center 15vw, top center;
     font-family: "Open Sans", sans-serif;
 }
 
 p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 button {
@@ -24,7 +28,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px 10%;
-    background-color: rgb(39, 58, 78);
 }
 
 .imagen_logo_header img {
@@ -156,7 +159,13 @@ h1, h2, h3 {
 }
 
 .comillas_resenya{
-    margin-left: 15%;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+
+.comillas_resenya img{
+    width: 2%;
+    height: 2%;
 }
 
 .tarjeta_resenya {
@@ -164,7 +173,7 @@ h1, h2, h3 {
     border-radius: 4px;
     flex-basis: 28%;
     padding: 1%;
-    min-height: 175px;
+    padding-top: 2%;
 }
 
 .tarjeta_resenya h3 {
@@ -192,6 +201,12 @@ h1, h2, h3 {
     border-radius: 50%;
     display: block;
     margin-right: 12px;
+}
+
+.texto_usuario{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 /* GET EARLY ACCESS */
@@ -242,9 +257,9 @@ h1, h2, h3 {
 /* FOOTER */
 
 .footer_container {
-    background-color: rgb(20, 30, 40);
+    background-color: rgb(8, 13, 18);
     margin-top: 0;
-    padding: 140px 10%;
+    padding: 140px 15%;
 }
 
 .imagen_logo_footer img {
