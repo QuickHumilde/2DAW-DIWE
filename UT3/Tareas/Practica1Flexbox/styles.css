@@ -17,6 +17,8 @@ button {
     border: none;
 }
 
+/* HEADER   */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -36,6 +38,8 @@ header {
     margin-left: 15px;
     font-size: 14px;
 }
+
+/* CENTRAL */
 
 .div_central {
     margin: auto;
@@ -59,11 +63,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .imagen_carpeta_personas_papeles img {
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
 }
 
 .boton_degradado {
@@ -198,9 +203,10 @@ h1, h2, h3 {
     width: 70%;
     background-color: rgb(63, 88, 113);
     display: flex;
-    justify-content: center;
     flex-flow: column nowrap;
     text-align: center;
+    justify-content: space-evenly;
+    min-height: 250px
 }
 
 .search_bar {
@@ -227,12 +233,18 @@ h1, h2, h3 {
     background: linear-gradient(90deg, rgb(124, 248, 255), rgb(124, 211, 255));
 }
 
+.get_started_container_father{
+    position: relative;
+    width: 100%;
+    margin-bottom: -140px;
+}
+
 /* FOOTER */
 
 .footer_container {
     background-color: rgb(20, 30, 40);
-    margin-top: 10%;
-    padding: 4% 10%;
+    margin-top: 0;
+    padding: 140px 10%;
 }
 
 .imagen_logo_footer img {
@@ -299,9 +311,4 @@ h1, h2, h3 {
 
 .footer_redes img {
     width: 14px;
-}
-
-.get_started_container_father{
-    position: absolute;
-    width: 100%
 }
