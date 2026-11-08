@@ -22,7 +22,7 @@ button {
     border: none;
 }
 
-/* HEADER   */
+/* HEADER */
 
 header {
     display: flex;
@@ -141,12 +141,6 @@ h1, h2, h3 {
     min-width: 260px;
 }
 
-.light_blue_link {
-    font-size: 14px;
-    color: aqua;
-    text-decoration: underline;
-}
-
 .show_how_fylo_works p {
     margin-top: 4%;
     margin-bottom: 4%;
@@ -154,6 +148,28 @@ h1, h2, h3 {
 
 .show_how_fylo_works h2 {
     text-align: left;
+}
+
+.light_blue_link {
+    font-size: 14px;
+    color: aqua;
+}
+
+.enlace_flecha {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-bottom: 1px solid aqua;
+    padding-bottom: 4px;
+}
+
+.imagen_flecha {
+    margin-left: 10px;
+}
+
+.imagen_flecha img {
+    width: 16px;
+    display: block;
 }
 
 /* RESENYAS */
@@ -178,7 +194,7 @@ h1, h2, h3 {
 }
 
 .tarjeta_resenya {
-    background-color: rgb(63, 88, 113);
+    background-color: rgb(33, 50, 67);
     border-radius: 4px;
     flex-basis: 28%;
     min-width: 240px;
@@ -198,6 +214,12 @@ h1, h2, h3 {
     align-items: center;
 }
 
+.texto_usuario {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
 .texto_usuario h3 {
     text-align: left;
 }
@@ -214,20 +236,20 @@ h1, h2, h3 {
     margin-right: 12px;
 }
 
-.texto_usuario {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-
 /* GET EARLY ACCESS */
+
+.get_started_container_father {
+    position: relative;
+    width: 100%;
+    margin-bottom: -140px;
+}
 
 .get_started_container {
     border-radius: 10px;
     margin: 4% auto 0;
     padding: 2% 3%;
     width: 70%;
-    background-color: rgb(63, 88, 113);
+    background-color: rgb(33, 50, 67);
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
@@ -260,16 +282,10 @@ h1, h2, h3 {
     background: linear-gradient(90deg, rgb(124, 248, 255), rgb(124, 211, 255));
 }
 
-.get_started_container_father {
-    position: relative;
-    width: 100%;
-    margin-bottom: -140px;
-}
-
 /* FOOTER */
 
 .footer_container {
-    background-color: rgb(8, 13, 18);
+    background-color: rgb(9, 14, 21);
     margin-top: 0;
     padding: 140px 15%;
 }
