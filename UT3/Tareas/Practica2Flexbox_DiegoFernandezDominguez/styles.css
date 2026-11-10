@@ -1,0 +1,159 @@
+*{
+    margin: 0 ;
+}
+
+button {
+    background-color: rgb(38, 201, 38);
+}
+
+p {
+    font-size: 20px;
+}
+
+/* HEADER */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    z-index: 9999999;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header-container a {
+    color: grey;
+    text-decoration: none;
+}
+
+/* ESLOGAN */
+
+.eslogan-container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.four-phone-img-background-container {
+    position: absolute;
+    z-index: -1;
+    left: 1055px;
+    top: 100px;
+}
+
+.four-phone-img-background-container img {
+    width: 50%;
+    height: 100%;
+}
+
+.four-phone-img-container {
+    display: flex;
+    z-index: 2;
+    margin-left: 20%;
+}
+
+.four-phone-img-container img {
+    width: 60%;
+    height: 100%;
+}
+
+.eslogan-text-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 5%;
+    color: black;
+}
+
+/* CARACTERISTICAS */
+
+.caracteristicas-container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: lightgray;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caracteristicas-container p {
+    color: grey;
+}
+
+.caracteristicas-text-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5%;
+}
+
+.caracteristicas-card-container {
+    display: flex;
+    flex-flow: row;
+    flex-basis: 25%;
+}
+
+.caracteristicas-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+}
+
+/* LATEST ARTICLES CONTAINER */
+
+.latest-articles-container {
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+}
+
+.article-card-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 25%;
+    justify-content: space-around;
+    
+}
+
+.article-card-img img{
+    height: 40%;
+    width: 40%;
+}
+
+.latest-articles-container-title {
+    padding-bottom: 3%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: darkblue;
+}
+
+.footer-container {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer-social-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer-column {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-column a, p {
+    color: white;
+    text-decoration: none;
+}
