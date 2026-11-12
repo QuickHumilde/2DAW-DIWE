@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 4px solid fuchsia;
+    width: 100%;
+    height: 500px;
+    background-color: seagreen;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+    /*grid-template-areas: 
+    "header header header sidebar"
+    "main main main sidebar"
+    "main main main sidebar"
+    "footer footer footer footer";*/
+
+    /* Crea 2 columnas, una ocupa el 25% del width y otra el 40% del width */
+    /* grid-template-columns: 25% 40%; */
+
+    /* Crea 2 columnas con un ancho de 1 fracción la primera y un ancho de 2 fracciones la segunda */
+    /* grid-template-columns: repeat(2, 1fr 2fr); */
+
+    /*grid-template-columns: repeat(3, 20%);*/
+    /*rid-template-rows: repeat(2, 20%);*/
+
+    /*row-gap: 30px;
+    column-gap: 50px;*/
+
+    /* Modifica el flujo del grid */
+    /*grid-auto-flow: column;*/
+
+    /* Ajusta el tamaño de las filas o columnas que se desbordan */
+    /*grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;*/
+
+    /* Permite que si un bloque deja un espacio al moverse, otro bloque tome su lugar */
+    /*grid-auto-flow: dense;*/
+
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*justify-items: center;*/
+    /*align-items: center;*/
+}
+
+.item{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    background: skyblue;
+    /*align-self: end;
+    justify-self: end;*/
+
+    /*grid-area: header;*/
+
+    /* Columna inicial que queremos que ocupe/ Columna final que queremos que ocupe */
+    /* grid-column: 2/-1; */
+
+    /* Desde donde empieces, ocupa 3 columnas */
+    /* grid-column: span 2; */
+
+    /* Fila inicial que queremos que ocupe/ Fila final que queremos que ocupe */
+    /* grid-row: 1/3; */
+    /* grid-row: span 2; */
+}
+
+.item2{
+    background: crimson;
+    /*grid-area: main;*/
+}
+
+.item3{
+    background: mediumvioletred;
+    /*grid-area: sidebar;*/
+    /*grid-column: span 3;*/
+}
+
+.item4{
+    background: darkorange;
+    /*grid-area: footer;*/
+}
+
+.item5{
+    background: rebeccapurple;
+}
+
+.item6{
+    background: lawngreen;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: black;
+    }
+}
