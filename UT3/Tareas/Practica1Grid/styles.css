@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 243, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-contenedor{
+    text-align: center;
+    text-decoration: none;
+    margin: 3vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-caracteristicas{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, 25%);   
+    gap: 10px; 
+    
+}
+
+.contenedor-imagen-caracteristicas{
+    grid-row: span 4;
+}
+
+.icono-flecha-izq{
+    width: 15%;
+    height: 15%;
+}
+
+.contenedor-tarjetas-caracteristicas {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.caracteristica-elegida{
+    background-color: rgb(83, 83, 253);
+    color: white;
+}
+
+.caracteristica-elegida img {
+    filter: brightness(0) invert(1);
+}
+
+.subtitulo-caracteristica{
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+.contenedor-precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.contenedor-precios p {
+    font-size: 16px;
+}
+
+.tarjeta-precio{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.precio-elegido{
+    background-color: rgb(1, 1, 34);
+    color: white;
+}
+
+.precio-elegido img {
+    filter: brightness(0) invert(1);
+}
+
+.precio-literalmente {
+    display: flex;
+    flex-direction: row;
+}
+
+.precio-unidad{
+    margin-left: 1vw;
+}
+
+.boton-escoger-plan{
+    background-color: rgb(83, 83, 253);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+}
+
+.contenedor-informacion-descargas{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.contenedor-icono-verificado{
+    display: inline-block;
+}
+
+.contenedor-informacion-descargas p{
+    display: inline-block;
+}
+
+footer{
+    background-color: rgb(1, 1, 34);
+    margin-top: 10vh;
+    height: 15vh;
+}
